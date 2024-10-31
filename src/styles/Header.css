@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f39d12ce;
+    color: white;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.header.scrolled {
+    background-color: rgba(243, 156, 18, 0.8);
+    opacity: 0.9;
+}
+
+.header-logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-family: 'Imperial Script', cursive;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.header-nav a:hover {
+    color: #000000;
+}
